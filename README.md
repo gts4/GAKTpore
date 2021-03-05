@@ -34,8 +34,8 @@ The next major function is process (**process_parallel** for the multiprocessing
 Note that this must be run before the territory areas can be calculated.
 
 #### **Parameters:** 
-##### FFT: bool, *Optional*. Default Value: True
-Whether to use FFT bandpass to smooth contours. Setting this to False will use the Savgol Filter from Scipy instead (Not validated yet, but much faster).
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FFT: bool, *Optional*. Default Value: True
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Whether to use FFT bandpass to smooth contours. Setting this to False will use the Savgol Filter from Scipy instead (Not validated yet, but much faster).
 
 ### GAKTPore.AnalysePores.**process_free_area**
 This function (and its parallel counterpart, **process_free_area_parallel**) calculates the territory area for each pore by computing the closest pore contour for each pixel of the image provided.
