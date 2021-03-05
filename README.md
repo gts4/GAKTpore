@@ -11,7 +11,7 @@ $ pip install GAKTPore
 
 GAKTPore provides a class 'AnalysePores' with multiple analytical tools. 
 
-###G AKTPore.**AnalysePores**
+### GAKTPore.**AnalysePores**
 The initialisation for the class works as a simple binarisation and pore detection tool utilising the OpenCV implementation of findContours.
 
 #### **Parameters:** 
