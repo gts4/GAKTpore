@@ -57,16 +57,20 @@ This function (and its parallel counterpart, **process_homogeneity_colour_map_pa
   Computes the number of pores and the porosity percentage in segmented steps from the centre of the image.
 #### **Parameters:** 
 
-#####   radii_n: int, *Optional*. Default Value: 10
-     Number of segmented steps to use between the centre and the maximum radius
-#####   radius_centre: np.array, *Optional*. Default Value: None
-     The pixel position to use as the centre for the segmented circle. If not supplied, simply takes the centre of the image.
-#####   radius_max: float, *Optional*. Default Value: None
-     The maximum radius to do the calculations for. If not supplied, simply calculates the distance to edge of the image from the centre.
-#####   draw_contours: bool, *Optional*. Default Value: False
-     Whether to draw the pores onto the map.
+##### radii_n: int, *Optional*. Default Value: 10
+Number of segmented steps to use between the centre and the maximum radius
+
+##### radius_centre: np.array, *Optional*. Default Value: None
+The pixel position to use as the centre for the segmented circle. If not supplied, simply takes the centre of the image.
+
+##### radius_max: float, *Optional*. Default Value: None
+The maximum radius to do the calculations for. If not supplied, simply calculates the distance to edge of the image from the centre.
+
+##### draw_contours: bool, *Optional*. Default Value: False
+Whether to draw the pores onto the map.
   
-#### **Returns:**  Colour map of the same resolution as the one in *process_free_area*.
+#### **Returns:**  
+Colour map of the same resolution as the one in *process_free_area*.
 
 
 A script utilising these functions to output the relevant data into a csv file and generate a colour map is included. This is what was used for the initial GAKTpore paper.
