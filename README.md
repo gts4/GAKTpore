@@ -16,8 +16,8 @@ The initialisation for the class works as a simple binarisation and pore detecti
 
 #### **Parameters:** 
 
-##### img: np.array,
-2D Grayscale Image
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; img: np.array,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2D Grayscale Image
 ##### threshold_value: int, *Optional*. Default Value: 125
 Threshold value for binarising the image
 ##### scale = float, *Optional*. Default Value: 1
