@@ -33,13 +33,15 @@ The number of parallel computations used when a multiprocessing function is used
 The next major function is process (**process_parallel** for the multiprocessing version). This function computes the properties of the pores (Area, Circularity etc.).
 Note that this must be run before the territory areas can be calculated.
 
-#### **Parameters:** FFT: bool, *Optional*. Default Value: True
+#### **Parameters:** 
+##### FFT: bool, *Optional*. Default Value: True
 Whether to use FFT bandpass to smooth contours. Setting this to False will use the Savgol Filter from Scipy instead (Not validated yet, but much faster).
 
 ### GAKTPore.AnalysePores.**process_free_area**
 This function (and its parallel counterpart, **process_free_area_parallel**) calculates the territory area for each pore by computing the closest pore contour for each pixel of the image provided.
 
-#### **Parameters:** zoom: int, *Optional*. Default Value: 1
+#### **Parameters:** 
+##### zoom: int, *Optional*. Default Value: 1
 Increase the resolution of the map used for computing the territory area. Example: zoom=2 will use double the resolution of the input image to calculate the territory area.
 
 ### GAKTPore.AnalysePores.**process_homogeneity_colour_map**
@@ -73,6 +75,7 @@ The maximum radius to do the calculations for. If not supplied, simply calculate
 ##### draw_contours: bool, *Optional*. Default Value: False
 Whether to draw the pores onto the map.
 
+### Testing Script
 
 A script utilising these functions to output the relevant data into a csv file and generate a colour map is included. This is what was used for the initial GAKTpore paper.
 
