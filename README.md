@@ -18,7 +18,7 @@ The syntax of the function are as follows:
 #### **Parameters**
 
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IMAGE_NAME: str,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The directory path for the image to be analysed. The image is expected to be grayscale. The image formats supported can be found on the OpenCV [imread](https://docs.opencv.org/3.4/d4/da8/group__imgcodecs.html) reference.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The directory path for the image to be analysed. The image is expected to be grayscale. The image formats supported can be found on the OpenCV [imread](https://docs.opencv.org/3.4/d4/da8/group__imgcodecs.html#imread) reference.
 
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SAVE_FOLDER:str,
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The directory where the output files will be saved to. There are 3 output files by default:
