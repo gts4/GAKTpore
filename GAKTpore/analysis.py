@@ -117,7 +117,7 @@ def run(IMAGE_NAME:str, SAVE_FOLDER:str, THRES:int, SCALE:float, UPSCALE_MULTIPL
 			f_save.write("\n"+str(a)+","+str(b)+","+str(c*2)+","+str(d*2)+","+str(e*2)+","+str(f)+","+str(g)+","+str(h)+","+str(i)+","+str(j)+","+str(k)+","+str(l)+","+str(m)+","+str(n)+","+str(o)+","+str(p)+","+str(q)+","+str(r))
 	combined_array = np.array([Pore_analysis.l_rad*2,Pore_analysis.area_rad*2,Pore_analysis.circ,Pore_analysis.waviness,Pore_analysis.aspect_ratios,Pore_analysis.area,Pore_analysis.area/Pore_analysis.homogeneity_areas]).T
 	with open(HIST_SAVE_NAME,"w") as f_save:
-		f_save.write("LSTP(um), Circular diameter, Circularity, Waviness, Aspect Ratio, Pore Area, Local Volume fraction %, Elongation (based on LSTP)")
+		f_save.write("LSTP(um), Circular diameter, Circularity, Waviness, Aspect Ratio, Pore Area, Local Area fraction, Elongation (based on LSTP)")
 		for i, j, k, l, m, n, o in combined_array:
 			f_save.write("\n"+str(i)+","+str(j)+","+str(k)+","+str(l)+","+str(m)+","+str(n)+","+str(o)+","+str(n/(np.pi*(i/2)**2))) # corrected elongation on 29/12/2020
 	if plt_save:
