@@ -11,6 +11,8 @@ $ pip install GAKTpore
 
 GAKTpore is distributed with a function utilising the GAKTpore 'AnalysePores' class to output the relevant data files into a save folder and generate a colour map. This outputs the data used for the initial GAKTpore paper. Test-case files are included on [Github](https://github.com/gts4/GAKTpore/), with images.
 
+A [user guide](https://github.com/gts4/GAKTpore/blob/master/User%20Guide.md) is available to help get started with GAKTpore and Python.
+
 The syntax of the function are as follows:
 
 ### GAKTpore.analysis.**run**
