@@ -130,17 +130,19 @@ def run(IMAGE_NAME:str, SAVE_FOLDER:str, THRES:int, SCALE:float, UPSCALE_MULTIPL
 		fig_bbox = f.axes[0].get_tightbbox(f.canvas.get_renderer())
 		plt.savefig(SAVE_FIG_NAME,dpi=(img.shape[0]*f.dpi/fig_bbox.height),bbox_inches='tight')
 		plt.close(f)
-		#plt.show()
 	else:
 		a = np.array([Pore_analysis.homogeneity_colour_mapper.get_clim()])
 		f = plt.figure(figsize=(0.58,3.77))
 		i = plt.imshow(a, cmap=Pore_analysis.homogeneity_colour_mapper.cmap)
 		plt.gca().set_visible(False)
 		f.tight_layout(pad=0)
-		cax = plt.axes([0.06, 0.02, 0.35, 0.96])
+		cax = plt.axes([0.1, 0.02, 0.35, 0.93])
 		plt.colorbar(cax=cax)
 		new_dpi = img.shape[0]/3.77
 		f.dpi = new_dpi
+		f.canvas.draw()
+		max_len = max([len(i.get_text()) for i in cax.get_yticklabels()])
+		f.set_size_inches((0.58+(max_len-1)*0.12,3.77))
 		f.canvas.draw()
 		data = np.array(f.canvas.renderer.buffer_rgba())[:,:,0:3]
 		plt.close('all')
