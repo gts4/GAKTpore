@@ -13,7 +13,7 @@ GAKTpore is distributed with a function utilising the GAKTpore 'AnalysePores' cl
 
 The syntax of the function are as follows:
 
-### GAKTpore.Analyse.**run**
+### GAKTpore.analyse.**run**
 
 #### **Parameters**
 
