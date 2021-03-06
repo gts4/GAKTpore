@@ -20,7 +20,7 @@ The syntax of the function are as follows:
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IMAGE_NAME: str,
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The directory path for the image to be analysed. The image is expected to be grayscale. The image formats supported can be found on the OpenCV [imread](https://docs.opencv.org/3.4/d4/da8/group__imgcodecs.html#imread) reference.
 
-##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SAVE_FOLDER:str,
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SAVE_FOLDER: str,
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The directory where the output files will be saved to. There are 3 output files by default:
 * A file containing the standard evaluation parameters (such as mean diameter, number of samples etc.) per radial step.
 * A file containing the standard evaluation parameters (such as pore area, cirularity etc.) for each pore, allowing further analysis.
@@ -52,19 +52,19 @@ The filename will be determined by the name of the image file and input paramete
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; npy_save: bool, *Optional*. Default Value = False,
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Whether to save the numpy array of the territory map. This map is a mask containing integers, where the integers refer to the pore number the territory belongs to.
 
-##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; plt_save:bool, *Optional*. Default Value = False,
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; plt_save: bool, *Optional*. Default Value = False,
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Whether to use matplotlib.save to save the area fraction image. Matplotlib.save is slow and will crash when using extremely high resolution images (> 25k x 25k), but is otherwise stable. If set to false, will use cv2.imsave to save the area fraction image.
 
-##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; draw_contours:bool, *Optional*. Default Value=True,
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; draw_contours: bool, *Optional*. Default Value=True,
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Whether to draw the pores onto the map in black.
 
-##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; vmin:float, *Optional*. Default Value=0,
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; vmin: float, *Optional*. Default Value=0,
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For the area fraction colour map, sets the minimum value to correspond with starting colour of the colour map. 
 
-##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; vmax:float, *Optional*. Default Value=1,
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; vmax: float, *Optional*. Default Value=1,
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For the area fraction colour map, sets the maximum value to correspond with final colour of the colour map. 
 
-##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; radii_n:int, *Optional*. Default Value=10
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; radii_n: int, *Optional*. Default Value=10
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Number of segmented steps to use between the centre of the image and the maximum radius.
 
 ## Usage
