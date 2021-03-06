@@ -53,7 +53,7 @@ The filename will be determined by the name of the image file and input paramete
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Whether to save the numpy array of the territory map. This map is a mask containing integers, where the integers refer to the pore number the territory belongs to.
 
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; plt_save:bool, *Optional*. Default Value = False,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Whether to use matplotlib.save to save the image. Matplotlib.save is slow and will crash when using extremely high resolution images (> 25k x 25k), but is otherwise stable.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Whether to use matplotlib.save to save the area fraction image. Matplotlib.save is slow and will crash when using extremely high resolution images (> 25k x 25k), but is otherwise stable. If set to false, will use cv2.imsave to save the area fraction image.
 
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; draw_contours:bool, *Optional*. Default Value=True,
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Whether to draw the pores onto the map in black.
