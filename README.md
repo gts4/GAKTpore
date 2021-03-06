@@ -26,7 +26,7 @@ The syntax of the function are as follows:
 * A file containing the standard evaluation parameters (such as pore area, cirularity etc.) for each pore, allowing further analysis.
 * The Area fraction image generated using the 'jet' colourmap via Matplotlib.
 
-The filename will be determined by the name of the image file and input parameters (Threshold, upscale multiplier, contour filtering method (FFT or Savgol) and the data) as <Image name>-<Threshold>-<Upscale Multiplier>x-<type of data>_<filtering method>.<file type>, for example 'Test1-127-1x_FFT.csv'.
+The filename will be determined by the name of the image file and input parameters (Threshold, upscale multiplier, contour filtering method (FFT or Savgol) and the data) as Image name-Threshold-Upscale Multiplier-type of data_&<filtering method&>.file-type, for example 'Test1-127-1x_FFT.csv'.
 
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; THRES: int,
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The binarisation integer, expected to be between 0-255.
