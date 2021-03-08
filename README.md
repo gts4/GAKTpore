@@ -142,3 +142,8 @@ This function (and its parallel counterpart, **process_homogeneity_colour_map_pa
 When using this package please cite:
 
 *   Sheppard, G.; Tassenberg, K.; Nenchev, B.; Strickland, J.; Mesalam, R.; Shepherd, J.; Williams, H. GAKTpore: Stereological Characterisation Methods for Porous Foams in Biomedical Applications. *Materials* **2021**, *14*, 1269. https://doi.org/10.3390/ma14051269 
+
+## Changelog
+
+### v1.1.2 (08/03/21)
+* Fixes a crash in *GAKTpore.analysis.**run*** radial processing section, which occurs when there are no pores within a radial step. Will output nans into the output data file.
