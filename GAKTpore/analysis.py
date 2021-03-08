@@ -95,7 +95,7 @@ def run(IMAGE_NAME:str, SAVE_FOLDER:str, THRES:int, SCALE:float, UPSCALE_MULTIPL
 		Pore_analysis.radius_steps,
 		Pore_analysis.radius_porosity,
 		np.array([np.mean(Pore_analysis.l_rad[rc]) for rc in Pore_analysis.radius_contours]),
-		np.array([np.max(Pore_analysis.l_rad[rc]) for rc in Pore_analysis.radius_contours]),
+		np.array([np.max(Pore_analysis.l_rad[rc]) if len(rc) > 0 else 0 for rc in Pore_analysis.radius_contours]),
 		np.array([np.std(Pore_analysis.l_rad[rc]) for rc in Pore_analysis.radius_contours]),
 		np.array([len(rc) for rc in Pore_analysis.radius_contours]),
 		np.array([np.mean(Pore_analysis.area[rc]) for rc in Pore_analysis.radius_contours]),
