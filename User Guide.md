@@ -106,5 +106,5 @@ However when you replace the path into your main.py file, make sure you have an 
   image_path = r"D:\Python\Different Folder\2-fft.tif"
 ```
 
-The r is **super important**! Python normally interprets the "\" as an [escape sequence](https://en.wikipedia.org/wiki/Escape_sequence) and so your path will not be interpreted correctly. 
-To get around this, you can either have r in front of the quotation marks (as above) or replace each instance of "\" with "\\" or "/".
+The r is **super important**! Python normally interprets the "\\" as an [escape sequence](https://en.wikipedia.org/wiki/Escape_sequence) and so your path will not be interpreted correctly. 
+To get around this, you can either have r in front of the quotation marks (as above) or replace each instance of "\\" with "\\\" or "/".
